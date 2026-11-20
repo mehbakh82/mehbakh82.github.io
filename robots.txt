@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mehbakh82.github.io/sitemap.xml

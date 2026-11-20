@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ee">
+  <title>Mehran Bakhtiari · Artificial Intelligence</title>
+  <meta name="description" content="Mehran Bakhtiari is an MSc student in Artificial Intelligence at Isfahan University of Technology. Explore research in Persian speech, medical imaging, and machine learning.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mehran Bakhtiari · Artificial Intelligence">
+  <meta property="og:description" content="Mehran Bakhtiari is an MSc student in Artificial Intelligence at Isfahan University of Technology. Explore research in Persian speech, medical imaging, and machine learning.">
+  <meta property="og:url" content="https://mehbakh82.github.io/">
+  <meta property="og:image" content="https://mehbakh82.github.io/assets/signal.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://mehbakh82.github.io/">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="wrap">
+    <a class="brand" href="index.html" aria-label="Mehran Bakhtiari, home"><span class="mark" aria-hidden="true">MB</span><span class="brand-text">Mehran Bakhtiari</span></a>
+    <nav aria-label="Main navigation"><a href="index.html#research">Research</a><a href="projects.html">Projects</a><a href="index.html#about">About</a><a href="cv.html" class="nav-cv">CV</a></nav>
+  </div></header>
+  <main id="main">
+    <div class="wrap">
+      <section class="hero">
+        <div>
+          <p class="kicker">MSc Artificial Intelligence · Insight Lab</p>
+          <h1>Mehran <span>Bakhtiari</span></h1>
+          <p class="intro">I study how models interpret images and speech, with a focus on evaluating where they work and where they fail.</p>
+          <div class="actions"><a class="button" href="#research">Explore my research</a><a class="text-link" href="https://github.com/mehbakh82">GitHub profile</a></div>
+        </div>
+        <figure class="hero-art">
+          <img src="assets/signal.webp" width="1200" height="940" alt="" fetchpriority="high">
+          <div class="art-top"><span class="caption">Signal study</span><span class="art-symbol" aria-hidden="true">✳</span></div>
+          <figcaption class="art-bottom"><span class="caption">Waveform contours</span><span class="caption">Illustration</span></figcaption>
+        </figure>
+      </section>
+      <dl class="affiliations">
+        <div><dt class="label">Affiliation</dt><dd>Isfahan University of Technology</dd></div>
+        <div><dt class="label">MSc supervisor</dt><dd><a href="https://scholar.google.com/citations?user=txV3rqgAAAAJ&amp;hl=en">Dr. Mina Amiri</a></dd></div>
+        <div><dt class="label">MSc co-supervisor</dt><dd><a href="https://scholar.google.com/citations?user=mZGNr2QAAAAJ&amp;hl=en">Dr. Nader Karimi</a></dd></div>
+      </dl>
+      <section class="section" id="research">
+        <div class="section-heading"><h2>Selected research.</h2><p>Research prototypes and feasibility studies in Persian speech, medical imaging, and microscopy.</p></div>
+        <article class="feature">
+          <div class="feature-media">
+            <div class="diagram" aria-label="The speech cascade runs NeMo ASR, then Qwen3, then Piper TTS">
+              <span>NeMo ASR</span><b aria-hidden="true">→</b><span>Qwen3</span><b aria-hidden="true">→</b><span>Piper TTS</span>
+            </div>
+            <p class="caption">Streaming speech cascade</p>
+            <p class="feature-measure"><strong>431 ms</strong><span>p90 software loopback<br>201 scripted turns</span></p>
+          </div>
+          <div class="feature-body">
+            <p class="meta">BSc thesis · 2026</p><h3>Persian full-duplex speech</h3>
+            <p>A browser voice assistant that listens during playback and lets the user interrupt. I compared a streaming cascade with direct speech-to-speech adaptation.</p>
+            <a class="text-link" href="research/persian-speech.html">Read the thesis case study</a>
+          </div>
+        </article>
+        <div class="cards"><article class="card">
+      <img src="assets/ultrasound.webp" width="740" height="415" loading="lazy" alt="">
+      <div class="card-content"><p class="meta">Medical imaging · MSc research pilot</p>
+        <h3>Breast ultrasound refinement</h3><p>Entropy-based retries improved Dice. An oracle fell short of the prespecified gain needed to train a router.</p>
+        <a class="text-link" href="research/breast-ultrasound.html" aria-label="Read the study on Recoverable errors in breast ultrasound">Read the study</a>
+      </div>
+    </article><article class="card">
+      <img src="assets/wrist.webp" width="740" height="415" loading="lazy" alt="">
+      <div class="card-content"><p class="meta">Medical imaging · Development pilot</p>
+        <h3>Paired-view wrist radiographs</h3><p>A projection-level audit found nine localizable misses. The pilot required ten distinct patients to continue.</p>
+        <a class="text-link" href="research/paired-wrist.html" aria-label="Read the study on Paired-view wrist radiographs">Read the study</a>
+      </div>
+    </article><article class="card">
+      <img src="assets/fluorescence.webp" width="740" height="415" loading="lazy" alt="">
+      <div class="card-content"><p class="meta">Computational imaging · Repeatability</p>
+        <h3>Fluorescence ridge repeatability</h3><p>Faint peaks rarely aligned point for point. Short segments showed exploratory support on development fields.</p>
+        <a class="text-link" href="research/fluorescence-ridges.html" aria-label="Read the study on Fluorescence ridge repeatability">Read the study</a>
+      </div>
+    </article></div>
+      </section>
+    </div>
+    <section class="band" id="engineering"><div class="wrap">
+      <div class="section-heading"><h2>Selected projects.</h2><p>Personal and academic work in applied machine learning, systems, and Persian-language tools.</p></div>
+      <div class="work-list"><article class="work-row"><h3>Persian sentiment with Gemma</h3><p>Fine-tuned Gemma 3 on SnappFood reviews. The held-out test recorded 87.80% macro F1.</p><a class="text-link" href="https://github.com/mehbakh82/Gemma-Snappfood-Sentiment" aria-label="Persian sentiment with Gemma on GitHub">GitHub</a></article><article class="work-row"><h3>Energy-aware task scheduling</h3><p>Compared genetic, graph neural, and heuristic schedulers for multi-core DAG workloads.</p><a class="text-link" href="https://github.com/mehbakh82/Energy-Aware-Task-Scheduler" aria-label="Energy-aware task scheduling on GitHub">GitHub</a></article><article class="work-row"><h3>Attention U-Net</h3><p>Compared U-Net and Attention U-Net on 23 classes, with test mIoU rising from 0.2173 to 0.3242.</p><a class="text-link" href="https://github.com/mehbakh82/U-Net-Semantic-Segmentation" aria-label="Attention U-Net on GitHub">GitHub</a></article><article class="work-row"><h3>Persian layout in Claude</h3><p>A browser extension that improves right-to-left rendering for Persian text and mixed-direction content.</p><a class="text-link" href="https://github.com/mehbakh82/Claude-RTL-Fix" aria-label="Persian layout in Claude on GitHub">GitHub</a></article></div>
+      <div class="actions"><a class="button" href="projects.html">Browse the project index</a></div>
+    </div></section>
+    <section class="section wrap about" id="about">
+      <div><p class="kicker">Background</p><h2>Research and teaching.</h2></div>
+      <div>
+        <p>I’m an MSc student in Artificial Intelligence at Isfahan University of Technology, where I do research in Insight Lab. My interests include computer vision, speech and language processing, and multimodal learning.</p>
+        <p>At Sharif University of Technology, I studied Computer Engineering and completed my Persian speech thesis under Dr. Hossein Sameti. I’ve served as head teaching assistant for Computer Vision at IUT and for Software Engineering, Advanced Programming, and Computer Simulation at Sharif.</p>
+        <div class="actions"><a class="text-link" href="cv.html">View curriculum vitae</a></div>
+      </div>
+    </section></main>
+  <footer class="footer"><div class="wrap">
+    <h2>Get in touch.</h2>
+    <div class="footer-links"><a href="mailto:mehbakh82@gmail.com">Email</a><a href="https://github.com/mehbakh82">GitHub</a><a href="https://www.linkedin.com/in/mehbakh82">LinkedIn</a></div>
+    <small>Mehran Bakhtiari · Isfahan, Iran</small>
+  </div></footer>
+</body>
+</html>

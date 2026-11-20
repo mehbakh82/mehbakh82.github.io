@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ee">
+  <title>Recoverable errors in breast ultrasound · Mehran Bakhtiari</title>
+  <meta name="description" content="A fixed-budget segmentation pilot asked which first-pass masks a second pass could improve.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Recoverable errors in breast ultrasound · Mehran Bakhtiari">
+  <meta property="og:description" content="A fixed-budget segmentation pilot asked which first-pass masks a second pass could improve.">
+  <meta property="og:url" content="https://mehbakh82.github.io/research/breast-ultrasound.html">
+  <meta property="og:image" content="https://mehbakh82.github.io/assets/ultrasound.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://mehbakh82.github.io/research/breast-ultrasound.html">
+  <link rel="icon" href="../assets/favicon.png">
+  <link rel="stylesheet" href="../styles.css">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Mehran Bakhtiari, home"><span class="mark" aria-hidden="true">MB</span><span class="brand-text">Mehran Bakhtiari</span></a>
+    <nav aria-label="Main navigation"><a href="../index.html#research">Research</a><a href="../projects.html">Projects</a><a href="../index.html#about">About</a><a href="../cv.html" class="nav-cv">CV</a></nav>
+  </div></header>
+  <main id="main">
+    <div class="narrow">
+      <div class="page-head"><p class="kicker">Medical imaging · MSc research pilot</p><h1>Recoverable errors in breast ultrasound</h1><p>A fixed-budget segmentation pilot asked which first-pass masks a second pass could improve.</p>
+        <div class="actions"><a class="button" href="https://github.com/mehbakh82/recoverable-us-segmentation">GitHub repository</a><a class="text-link" href="../index.html#research">All research</a></div>
+      </div>
+      <figure class="case-art"><img src="../assets/ultrasound.webp" alt="" width="740" height="415"><figcaption class="caption">Illustrative study artwork</figcaption></figure>
+      <dl class="findings" aria-label="Reported results"><div><dt>0.8581</dt><dd>first-pass patient-macro lesion Dice</dd></div><div><dt>0.8683</dt><dd>Dice with 73 entropy-selected retries</dd></div><div><dt>+0.00907</dt><dd>oracle gain over entropy, below the +0.010 gate</dd></div></dl>
+      <div class="prose"><section><h2>Question</h2><p>Can we route a second segmentation pass to the cases most likely to benefit? The study held the first-pass segmenter, refiner, and retry budget fixed so that only the allocation policy changed.</p></section><section><h2>What I tested</h2><p>The held-out development pilot comprised 365 BUS-BRA scans from 214 patients. I compared first-pass masks with 73 entropy-selected retries and the best possible 73 allocations using reference masks as an oracle.</p></section><section><h2>Decision and follow-up</h2><p>Oracle headroom fell below the prespecified threshold, so router training stopped. The internal test fold and external datasets remained unscored. In a post-hoc audit, 19 entropy-selected retries worsened their masks. All 19 contained the full reference lesion in the crop, and 16 added false-positive pixels.</p></section>
+        <section><h2>Source material</h2><ul><li><a href="https://github.com/mehbakh82/recoverable-us-segmentation/blob/main/closeout/PILOT-CLOSEOUT.md">Pilot closeout</a></li><li><a href="https://github.com/mehbakh82/recoverable-us-segmentation/blob/main/closeout/MASK-AUDIT.md">Pixel-change audit</a></li><li><a href="https://github.com/mehbakh82/recoverable-us-segmentation/blob/main/PROTOCOL.md">Study protocol</a></li></ul></section>
+      </div>
+    </div></main>
+  <footer class="footer"><div class="wrap">
+    <h2>Get in touch.</h2>
+    <div class="footer-links"><a href="mailto:mehbakh82@gmail.com">Email</a><a href="https://github.com/mehbakh82">GitHub</a><a href="https://www.linkedin.com/in/mehbakh82">LinkedIn</a></div>
+    <small>Mehran Bakhtiari · Isfahan, Iran</small>
+  </div></footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ee">
+  <title>Persian full-duplex speech · Mehran Bakhtiari</title>
+  <meta name="description" content="A streaming voice assistant that keeps listening during playback, with a measured cascade and an experimental direct speech route.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Persian full-duplex speech · Mehran Bakhtiari">
+  <meta property="og:description" content="A streaming voice assistant that keeps listening during playback, with a measured cascade and an experimental direct speech route.">
+  <meta property="og:url" content="https://mehbakh82.github.io/research/persian-speech.html">
+  <meta property="og:image" content="https://mehbakh82.github.io/assets/signal.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://mehbakh82.github.io/research/persian-speech.html">
+  <link rel="icon" href="../assets/favicon.png">
+  <link rel="stylesheet" href="../styles.css">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Mehran Bakhtiari, home"><span class="mark" aria-hidden="true">MB</span><span class="brand-text">Mehran Bakhtiari</span></a>
+    <nav aria-label="Main navigation"><a href="../index.html#research">Research</a><a href="../projects.html">Projects</a><a href="../index.html#about">About</a><a href="../cv.html" class="nav-cv">CV</a></nav>
+  </div></header>
+  <main id="main">
+    <div class="narrow">
+      <div class="page-head"><p class="kicker">BSc thesis · Sharif University of Technology</p><h1>Persian full-duplex speech</h1><p>A streaming voice assistant that keeps listening during playback, with a measured cascade and an experimental direct speech route.</p>
+        <div class="actions"><a class="button" href="https://github.com/mehbakh82/Thesis_Project">GitHub repository</a><a class="text-link" href="../index.html#research">All research</a></div>
+      </div>
+      <figure class="case-art"><img src="../assets/signal.webp" alt="" width="740" height="415"><figcaption class="caption">Illustrative signal study</figcaption></figure>
+      <dl class="findings" aria-label="Reported results"><div><dt>431 ms</dt><dd>p90 browser-loopback latency on 201 scripted turns</dd></div><div><dt>6,754</dt><dd>conversation pairs in the original audited corpus</dd></div><div><dt>3.15 / 4</dt><dd>mean relevance on the 40-row automatic final test</dd></div></dl>
+      <div class="prose"><section><h2>Question</h2><p>How can a Persian voice assistant respond promptly and let a user interrupt while it is speaking? I compared a modular streaming cascade with parameter-efficient adaptation of a direct speech-to-speech model.</p></section><section><h2>What I built</h2><p>The cascade streams browser microphone audio to NeMo ASR, Qwen3-4B, and Persian Piper. Speculative endpointing starts work early. During double-talk, playback ducks first, then lexical confirmation rejects echoes and short backchannels. The interruption can stop the current reply and carry into the next turn.</p></section><section><h2>What the experiments showed</h2><p>In the repository closeout, the automated browser loopback measured 372 ms mean and 431 ms p90 across 201 scripted turns on an H100. On a separate source-session-disjoint semantic panel, automatic judge relevance rose from 1.425 to 3.150 out of 4 against the frozen Qwen2.5-0.5B baseline. The original corpus comprised 6,754 pairs across 162 source sessions and yielded roughly 108.6 hours of Piper-derived stereo training audio.</p></section><section><h2>Limits and decision</h2><p>The loopback used a software audio path and an H100 with measured memory use. The human listening study remained unrun. Direct Moshika adaptation reduced training text loss, while all four evaluated v6.2 checkpoints passed zero of nine direct runtime rows. A later phoneme experiment improved the runtime count but still yielded unintelligible speech. I retained the cascade.</p></section>
+        <section><h2>Source material</h2><ul><li><a href="https://github.com/mehbakh82/Thesis_Project/blob/main/docs/LIVE_LOOPBACK_V2_RESULT.md">Browser loopback closeout</a></li><li><a href="https://github.com/mehbakh82/Thesis_Project/blob/main/docs/MOSHI_V7_RESULT.md">Direct speech follow-up</a></li><li><a href="https://github.com/mehbakh82/Thesis_Project/blob/main/results/eval/qwen4b_responder_v2_final_test_proxy.json">Final automatic semantic result</a></li></ul></section>
+      </div>
+    </div></main>
+  <footer class="footer"><div class="wrap">
+    <h2>Get in touch.</h2>
+    <div class="footer-links"><a href="mailto:mehbakh82@gmail.com">Email</a><a href="https://github.com/mehbakh82">GitHub</a><a href="https://www.linkedin.com/in/mehbakh82">LinkedIn</a></div>
+    <small>Mehran Bakhtiari · Isfahan, Iran</small>
+  </div></footer>
+</body>
+</html>
