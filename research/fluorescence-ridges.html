@@ -7,28 +7,32 @@
   <title>Fluorescence ridge repeatability · Mehran Bakhtiari</title>
   <meta name="description" content="Disjoint repeat exposures tested whether faint F-actin ridges could provide a stable reference for denoising.">
   <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Mehran Bakhtiari">
   <meta property="og:title" content="Fluorescence ridge repeatability · Mehran Bakhtiari">
   <meta property="og:description" content="Disjoint repeat exposures tested whether faint F-actin ridges could provide a stable reference for denoising.">
   <meta property="og:url" content="https://mehbakh82.github.io/research/fluorescence-ridges.html">
   <meta property="og:image" content="https://mehbakh82.github.io/assets/fluorescence.webp">
+  <meta property="og:image:alt" content="Illustration accompanying the research case study">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://mehbakh82.github.io/research/fluorescence-ridges.html">
   <link rel="icon" href="../assets/favicon.png">
+  <link rel="preload" href="../assets/serif.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../styles.css">
-  
+
+
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header><div class="wrap">
-    <a class="brand" href="../index.html" aria-label="Mehran Bakhtiari, home"><span class="mark" aria-hidden="true">MB</span><span class="brand-text">Mehran Bakhtiari</span></a>
-    <nav aria-label="Main navigation"><a href="../index.html#research">Research</a><a href="../projects.html">Projects</a><a href="../index.html#about">About</a><a href="../cv.html" class="nav-cv">CV</a></nav>
+    <a class="brand" href="../index.html" aria-label="MB Mehran Bakhtiari, home"><span class="mark" aria-hidden="true">MB</span> <span class="brand-text">Mehran Bakhtiari</span></a>
+    <nav aria-label="Main navigation"><a href="../index.html#research">Research</a><a href="../industry.html">Industry</a><a href="../projects.html">Projects</a><a href="../index.html#about">About</a><a href="../cv.html" class="nav-cv">CV</a></nav>
   </div></header>
-  <main id="main">
+  <main id="main" tabindex="-1">
     <div class="narrow">
       <div class="page-head"><p class="kicker">Computational imaging · Repeatability</p><h1>Fluorescence ridge repeatability</h1><p>Disjoint repeat exposures tested whether faint F-actin ridges could provide a stable reference for denoising.</p>
         <div class="actions"><a class="button" href="https://github.com/mehbakh82/fluorescence-ridge-repeatability">GitHub repository</a><a class="text-link" href="../index.html#research">All research</a></div>
       </div>
-      <figure class="case-art"><img src="../assets/fluorescence.webp" alt="" width="740" height="415"><figcaption class="caption">Illustrative study artwork</figcaption></figure>
+      <figure class="case-art"><img src="../assets/fluorescence.webp" alt="" width="740" height="415" fetchpriority="high"><figcaption class="caption">Illustrative study artwork</figcaption></figure>
       <dl class="findings" aria-label="Reported results"><div><dt>36.4%</dt><dd>median point agreement, against a 75% gate</dd></div><div><dt>74.0%</dt><dd>exploratory same-path segment support vs 15.9% controls</dd></div><div><dt>0 / 12</dt><dd>external fields with enough eligible segments</dd></div></dl>
       <div class="prose"><section><h2>Question</h2><p>Can a faint fluorescent ridge serve as a reference if its peak moves between independent exposures? The study tested point repeatability before comparing denoisers.</p></section><section><h2>What I tested</h2><p>Across seven eligible FMD development fields, median point agreement was 36.4%. A follow-up on six development fields compared short same-path segments with matched parallel controls and found 74.0% versus 15.9% support.</p></section><section><h2>Decision and follow-up</h2><p>The point gate stopped the denoiser comparison. No external W2S field had enough segments for the follow-up endpoint, leaving it unestimable. The development finding is exploratory and leaves individual filament identity unresolved.</p></section>
         <section><h2>Source material</h2><ul><li><a href="https://github.com/mehbakh82/fluorescence-ridge-repeatability/blob/main/closeout/DECISION.md">Decision and limitations</a></li><li><a href="https://github.com/mehbakh82/fluorescence-ridge-repeatability/blob/main/PROTOCOL.md">Point protocol</a></li><li><a href="https://github.com/mehbakh82/fluorescence-ridge-repeatability/blob/main/segments/PROTOCOL.md">Segment protocol</a></li></ul></section>

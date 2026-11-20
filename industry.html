@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ee">
+  <title>Industry projects · Mehran Bakhtiari</title>
+  <meta name="description" content="Mehran Bakhtiari’s work at Mohaymen ICT in aerial imaging, Persian ASR, offline multilingual services, and GPU model serving.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mehran Bakhtiari">
+  <meta property="og:title" content="Industry projects · Mehran Bakhtiari">
+  <meta property="og:description" content="Mehran Bakhtiari’s work at Mohaymen ICT in aerial imaging, Persian ASR, offline multilingual services, and GPU model serving.">
+  <meta property="og:url" content="https://mehbakh82.github.io/industry.html">
+  <meta property="og:image" content="https://mehbakh82.github.io/assets/social.jpg">
+  <meta property="og:image:alt" content="Mehran Bakhtiari, Artificial Intelligence">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://mehbakh82.github.io/industry.html">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preload" href="assets/serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="wrap">
+    <a class="brand" href="index.html" aria-label="MB Mehran Bakhtiari, home"><span class="mark" aria-hidden="true">MB</span> <span class="brand-text">Mehran Bakhtiari</span></a>
+    <nav aria-label="Main navigation"><a href="index.html#research">Research</a><a href="industry.html" aria-current="page">Industry</a><a href="projects.html">Projects</a><a href="index.html#about">About</a><a href="cv.html" class="nav-cv">CV</a></nav>
+  </div></header>
+  <main id="main" tabindex="-1">
+<div class="wrap">
+  <div class="page-head industry-head">
+    <p class="kicker">AI Software Engineer · Mohaymen ICT · Since 2025</p>
+    <h1>Industry projects</h1>
+    <p>Applied computer vision, Persian and multilingual AI, and GPU inference infrastructure. Results come from project evaluations recorded in my CV. Employer project code is outside my public GitHub portfolio.</p>
+  </div>
+  <nav class="industry-nav" aria-label="Industry projects"><ul><li><a href="#satellite-detection">Satellite object detection</a></li><li><a href="#license-plates">Persian license plate recognition</a></li><li><a href="#vision-systems">Aerial, document, and image systems</a></li><li><a href="#persian-asr">Persian speech recognition</a></li><li><a href="#offline-services">Offline multilingual services</a></li><li><a href="#model-serving">GPU model serving and observability</a></li></ul></nav>
+  <div class="industry-projects"><section id="satellite-detection" class="industry-project">
+      <div><p class="meta">Computer vision</p><h2>Satellite object detection</h2></div>
+      <div><p>I fine-tuned and evaluated a 23-class YOLOv10s detector on a merged aerial-imagery corpus of 85,977 files. I used inverse-frequency class weighting and augmentation that accounted for object rotation and scale.</p><dl class="findings" aria-label="Project evaluation"><div><dt>78.6%</dt><dd>mAP@50</dd></div><div><dt>54.3%</dt><dd>mAP@50–95</dd></div><div><dt>2.0 ms</dt><dd>inference per image on an A100</dd></div></dl><p class="evaluation-scope">The held-out split comprised 4,301 images and 51,357 objects.</p></div>
+    </section><section id="license-plates" class="industry-project">
+      <div><p class="meta">Computer vision</p><h2>Persian license plate recognition</h2></div>
+      <div><p>I built a two-stage YOLOv12m pipeline that detects plates and then localizes individual characters. I consolidated and normalized IR-LPR, IMLP, ILPD, and 83,844 Iranis character crops.</p><dl class="findings" aria-label="Project evaluation"><div><dt>98.65%</dt><dd>plate detection mAP@50</dd></div><div><dt>94.90%</dt><dd>character detection mAP@50</dd></div><div><dt>≈15 ms</dt><dd>end-to-end latency on an H100</dd></div></dl><p class="evaluation-scope">The best evaluated plate and character models were scored on disjoint test sets.</p></div>
+    </section><section id="vision-systems" class="industry-project">
+      <div><p class="meta">Computer vision</p><h2>Aerial, document, and image systems</h2></div>
+      <div><p>I developed an aerial detector ensemble across VisDrone, OpenImages, and DOTA, using SAHI slicing and altitude-adaptive confidence fusion. I also developed layout-aware OCR with Chandra, face analysis with SCRFD and ArcFace, and image tagging with RAM++ and Persian label localization.</p></div>
+    </section><section id="persian-asr" class="industry-project">
+      <div><p class="meta">Speech and language</p><h2>Persian speech recognition</h2></div>
+      <div><p>I fine-tuned a 116.5-million-parameter NeMo Conformer Hybrid RNNT/CTC on 997,540 utterances covering 1,601 hours. I used source-group-disjoint splits, replay training, augmentation, and Persian text normalization.</p><dl class="findings" aria-label="Project evaluation"><div><dt>18.08%</dt><dd>word error rate</dd></div><div><dt>0.00124</dt><dd>corpus real-time factor on an H100</dd></div></dl></div>
+    </section><section id="offline-services" class="industry-project">
+      <div><p class="meta">Speech and language</p><h2>Offline multilingual services</h2></div>
+      <div><p>I packaged NeMo and Seamless M4T speech recognition, Pyannote and Sortformer diarization, VoxLingua language identification, NLLB-200 translation, and VITS speech synthesis in self-contained Docker services for CPU and GPU. The portfolio also covers zero-shot text classification and explainable Persian offensive-content moderation with ParsBERT.</p></div>
+    </section><section id="model-serving" class="industry-project">
+      <div><p class="meta">ML infrastructure</p><h2>GPU model serving and observability</h2></div>
+      <div><p>I deployed and stress-tested quantized vLLM and pooling services on H100 GPUs for Qwen 27B, GPT-OSS 20B, Gemma 12B, and Qwen3 embedding and reranking models up to 8B. I built GPU memory planning, monitoring, alerting, and distributed tracing with Prometheus, Grafana, Loki, and Jaeger.</p></div>
+    </section></div>
+</div></main>
+  <footer class="footer"><div class="wrap">
+    <h2>Get in touch.</h2>
+    <div class="footer-links"><a href="mailto:mehbakh82@gmail.com">Email</a><a href="https://github.com/mehbakh82">GitHub</a><a href="https://www.linkedin.com/in/mehbakh82">LinkedIn</a></div>
+    <small>Mehran Bakhtiari · Isfahan, Iran</small>
+  </div></footer>
+</body>
+</html>

@@ -6,29 +6,34 @@
   <meta name="theme-color" content="#f6f5ee">
   <title>Project index · Mehran Bakhtiari</title>
   <meta name="description" content="Explore Mehran Bakhtiari’s public personal and academic projects in AI, imaging, language, and systems.">
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mehran Bakhtiari">
   <meta property="og:title" content="Project index · Mehran Bakhtiari">
   <meta property="og:description" content="Explore Mehran Bakhtiari’s public personal and academic projects in AI, imaging, language, and systems.">
   <meta property="og:url" content="https://mehbakh82.github.io/projects.html">
-  <meta property="og:image" content="https://mehbakh82.github.io/assets/signal.webp">
+  <meta property="og:image" content="https://mehbakh82.github.io/assets/social.jpg">
+  <meta property="og:image:alt" content="Mehran Bakhtiari, Artificial Intelligence">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://mehbakh82.github.io/projects.html">
   <link rel="icon" href="assets/favicon.png">
+  <link rel="preload" href="assets/serif.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
+
   <script src="archive.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header><div class="wrap">
-    <a class="brand" href="index.html" aria-label="Mehran Bakhtiari, home"><span class="mark" aria-hidden="true">MB</span><span class="brand-text">Mehran Bakhtiari</span></a>
-    <nav aria-label="Main navigation"><a href="index.html#research">Research</a><a href="projects.html" aria-current="page">Projects</a><a href="index.html#about">About</a><a href="cv.html" class="nav-cv">CV</a></nav>
+    <a class="brand" href="index.html" aria-label="MB Mehran Bakhtiari, home"><span class="mark" aria-hidden="true">MB</span> <span class="brand-text">Mehran Bakhtiari</span></a>
+    <nav aria-label="Main navigation"><a href="index.html#research">Research</a><a href="industry.html">Industry</a><a href="projects.html" aria-current="page">Projects</a><a href="index.html#about">About</a><a href="cv.html" class="nav-cv">CV</a></nav>
   </div></header>
-  <main id="main">
+  <main id="main" tabindex="-1">
 <div class="wrap archive">
   <div class="page-head"><p class="kicker">Personal and academic work</p><h1>Project index.</h1><p>Research code, course projects, and software experiments. Search across topics, or browse by area.</p></div>
-  <form class="filter-form" role="search" hidden>
-    <label for="search">Search projects<input id="search" type="search" placeholder="Try segmentation, Persian, or Kotlin"></label>
-    <label for="category">Category<select id="category"><option value="">All categories</option><option>Research</option><option>Vision and imaging</option><option>Language</option><option>Machine learning</option><option>Search and reinforcement learning</option><option>Systems and software</option><option>Bioinformatics coursework</option><option>Course archives</option></select></label>
+  <form class="filter-form" role="search" aria-label="Project filters" hidden>
+    <label for="search">Search projects<input id="search" name="q" type="search" autocomplete="off" placeholder="Try segmentation, Persian, or Kotlin…"></label>
+    <label for="category">Category<select id="category" name="category" autocomplete="off"><option value="">All categories</option><option>Research</option><option>Vision and imaging</option><option>Language</option><option>Machine learning</option><option>Search and reinforcement learning</option><option>Systems and software</option><option>Bioinformatics coursework</option><option>Course archives</option></select></label>
+    <button class="filter-reset" type="reset">Clear filters</button>
   </form>
   <p id="count" role="status">59 repositories</p><p id="empty" hidden>No projects match. Change the search or category.</p>
   <section aria-label="Repositories"><article class="archive-row" data-category="Research" data-repo="fluorescence-ridge-repeatability">
