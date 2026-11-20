@@ -108,6 +108,7 @@ header nav a:hover,header nav a[aria-current=page]{color:var(--accent);text-deco
 .page-head p{color:var(--sub);font-size:1.16rem;margin-top:1.1rem}
 .page-head .kicker{font-size:.875rem;margin-top:0}
 .print-contact{display:none}
+.cv-profiles{display:flex;align-items:center;flex-wrap:wrap;gap:.65rem 1.1rem}
 .narrow{width:min(100% - 7rem,900px);margin-inline:auto}
 .case-art{border-radius:5px;overflow:hidden}
 .case-art img{aspect-ratio:2.65;max-height:340px;object-fit:cover}
