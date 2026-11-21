@@ -36,7 +36,8 @@ function filterProjects({ updateURL = true } = {}) {
 function restoreFilters() {
   const params = new URL(location.href).searchParams;
   search.value = params.get('q') || '';
-  category.value = params.get('category') || '';
+  const requestedCategory = params.get('category') || '';
+  category.value = requestedCategory === 'Bioinformatics coursework' ? 'Bioinformatics' : requestedCategory;
   if (category.selectedIndex === -1) category.selectedIndex = 0;
   filterProjects({ updateURL: false });
 }
