@@ -91,7 +91,10 @@ header nav a:hover,header nav a[aria-current=page]{color:var(--accent);text-deco
 .work-row{display:grid;grid-template-columns:1fr 1.25fr auto;align-items:center;gap:1.15rem;padding:1.03rem 0;border-bottom:1px solid #c0c9b8}
 .work-row h3{font-size:clamp(1.8rem,3vw,2.65rem)}
 .work-row p{color:var(--sub)}
-.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,7vw,7rem)}
+.about{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.62fr);gap:clamp(2rem,5vw,5rem)}
+.about-profile{display:grid;grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);align-items:start;gap:clamp(1.15rem,2.7vw,2.45rem)}
+.about-portrait{overflow:hidden;border:1px solid var(--rule);border-radius:5px}
+.about-portrait img{transform:scale(1.06);transform-origin:50% 68%}
 .about h2{max-width:12ch}
 .about .kicker{color:var(--accent);margin-bottom:.65rem}
 .about p+p,.prose p+p{margin-top:1rem}
@@ -178,6 +181,10 @@ header nav a:hover,header nav a[aria-current=page]{color:var(--accent);text-deco
  .industry-projects{padding-top:0;padding-bottom:3rem}
  .findings{gap:.75rem}
  .findings dd{overflow-wrap:anywhere}
+}
+@media(max-width:520px){
+ .about-profile{grid-template-columns:1fr}
+ .about-portrait{width:min(62%,232px)}
 }
 @media(max-width:375px){
  .wrap,.narrow{width:calc(100% - 1.75rem)}
