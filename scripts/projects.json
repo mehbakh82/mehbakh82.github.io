@@ -1,0 +1,226 @@
+{
+  "owner": "mehbakh82",
+  "excluded_repositories": [
+    "mehbakh82.github.io",
+    "mehbakh82"
+  ],
+  "categories": [
+    "Research",
+    "Vision and imaging",
+    "Language",
+    "Machine learning",
+    "Search and reinforcement learning",
+    "Systems and software",
+    "Bioinformatics",
+    "Course archives",
+    "Other projects"
+  ],
+  "overrides": {
+    "808742992": {
+      "category": "Machine learning",
+      "title": "Heart disease risk modeling with HMMs"
+    },
+    "808745261": {
+      "category": "Search and reinforcement learning"
+    },
+    "808753078": {
+      "category": "Vision and imaging"
+    },
+    "808759291": {
+      "category": "Machine learning"
+    },
+    "808763751": {
+      "category": "Machine learning"
+    },
+    "808768079": {
+      "category": "Search and reinforcement learning"
+    },
+    "808769804": {
+      "category": "Search and reinforcement learning"
+    },
+    "808772803": {
+      "category": "Search and reinforcement learning"
+    },
+    "809383436": {
+      "category": "Machine learning"
+    },
+    "811476416": {
+      "category": "Machine learning"
+    },
+    "849126735": {
+      "category": "Machine learning"
+    },
+    "849130508": {
+      "category": "Machine learning"
+    },
+    "849133380": {
+      "category": "Search and reinforcement learning"
+    },
+    "849138254": {
+      "category": "Language",
+      "title": "Bilingual movie-genre classification"
+    },
+    "849141048": {
+      "category": "Search and reinforcement learning",
+      "title": "A2C-style CartPole"
+    },
+    "871628866": {
+      "category": "Systems and software"
+    },
+    "932847267": {
+      "category": "Systems and software"
+    },
+    "961480871": {
+      "category": "Systems and software",
+      "title": "GitHub user fetcher"
+    },
+    "979944929": {
+      "category": "Machine learning"
+    },
+    "979945995": {
+      "category": "Machine learning",
+      "title": "LDA classification from scratch"
+    },
+    "979948742": {
+      "category": "Machine learning"
+    },
+    "979954708": {
+      "category": "Machine learning"
+    },
+    "979955511": {
+      "category": "Language"
+    },
+    "985331253": {
+      "category": "Machine learning",
+      "title": "KNN and PCA from scratch"
+    },
+    "985332790": {
+      "category": "Machine learning"
+    },
+    "998021841": {
+      "category": "Machine learning",
+      "title": "GMM and DBSCAN from scratch"
+    },
+    "998024470": {
+      "category": "Machine learning"
+    },
+    "1034507622": {
+      "category": "Course archives",
+      "description": "React static frontend with a GitHub Actions deployment exercise."
+    },
+    "1037141069": {
+      "category": "Systems and software"
+    },
+    "1038991288": {
+      "category": "Vision and imaging",
+      "title": "YOLO Rock–Paper–Scissors"
+    },
+    "1046890348": {
+      "category": "Course archives",
+      "description": "Java messaging-service exercise comparing implementations before and after a SOLID refactor."
+    },
+    "1055846087": {
+      "category": "Systems and software",
+      "title": "Android Simple Note App"
+    },
+    "1056008465": {
+      "category": "Systems and software",
+      "title": "iOS Simple Note App"
+    },
+    "1092768358": {
+      "category": "Vision and imaging",
+      "title": "U-Net semantic segmentation"
+    },
+    "1115912424": {
+      "category": "Course archives"
+    },
+    "1115914691": {
+      "category": "Course archives"
+    },
+    "1115915986": {
+      "category": "Course archives"
+    },
+    "1115916538": {
+      "category": "Course archives"
+    },
+    "1115916910": {
+      "category": "Course archives"
+    },
+    "1115918904": {
+      "category": "Course archives"
+    },
+    "1115919707": {
+      "category": "Course archives"
+    },
+    "1115921525": {
+      "category": "Course archives"
+    },
+    "1115921955": {
+      "category": "Course archives"
+    },
+    "1115925763": {
+      "category": "Course archives"
+    },
+    "1115927624": {
+      "category": "Course archives"
+    },
+    "1115928461": {
+      "category": "Course archives"
+    },
+    "1115929681": {
+      "category": "Course archives"
+    },
+    "1116136483": {
+      "category": "Systems and software"
+    },
+    "1116336378": {
+      "category": "Course archives"
+    },
+    "1155093901": {
+      "category": "Language",
+      "title": "Persian sentiment with Gemma"
+    },
+    "1236443957": {
+      "category": "Systems and software",
+      "title": "Energy-aware task scheduling"
+    },
+    "1270311768": {
+      "category": "Course archives"
+    },
+    "1270490731": {
+      "category": "Bioinformatics",
+      "title": "LUAD ceRNA biomarker analysis"
+    },
+    "1270491008": {
+      "category": "Systems and software",
+      "title": "C-minus compiler"
+    },
+    "1271967374": {
+      "category": "Systems and software"
+    },
+    "1343755694": {
+      "category": "Research",
+      "title": "Persian full-duplex speech"
+    },
+    "1462907675": {
+      "category": "Research",
+      "title": "Recoverable errors in breast ultrasound"
+    },
+    "1464040425": {
+      "category": "Research",
+      "title": "Fluorescence ridge repeatability"
+    },
+    "1465110116": {
+      "category": "Research",
+      "title": "Paired-view wrist radiographs"
+    },
+    "1466304402": {
+      "category": "Research",
+      "title": "Lung nodule volume agreement"
+    },
+    "1467212121": {
+      "category": "Research",
+      "title": "Thyroid nodule segmentation on ultrasound"
+    }
+  }
+}

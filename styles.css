@@ -91,6 +91,9 @@ header nav a:hover,header nav a[aria-current=page]{color:var(--accent);text-deco
 .work-row{display:grid;grid-template-columns:1fr 1.25fr auto;align-items:center;gap:1.15rem;padding:1.03rem 0;border-bottom:1px solid #c0c9b8}
 .work-row h3{font-size:clamp(1.8rem,3vw,2.65rem)}
 .work-row p{color:var(--sub)}
+.research-updates{margin-top:clamp(2.5rem,5vw,4.5rem)}
+.research-updates .work-list{margin-top:1rem}
+.research-updates h4{margin:0;font-size:1rem;font-weight:650;line-height:1.45}
 .about{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.62fr);gap:clamp(2rem,5vw,5rem)}
 .about-profile{display:grid;grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);align-items:start;gap:clamp(1.15rem,2.7vw,2.45rem)}
 .about-portrait{overflow:hidden;border:1px solid var(--rule);border-radius:5px}

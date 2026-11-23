@@ -32,188 +32,256 @@
   <div class="page-head"><p class="kicker">Personal and academic work</p><h1>Project index.</h1><p>Research code, course projects, and software experiments. Search across topics, or browse by area.</p></div>
   <form class="filter-form" role="search" aria-label="Project filters" hidden>
     <label for="search">Search projects<input id="search" name="q" type="search" autocomplete="off" placeholder="Try segmentation, Persian, or Kotlin…"></label>
-    <label for="category">Category<select id="category" name="category" autocomplete="off"><option value="">All categories</option><option>Research</option><option>Vision and imaging</option><option>Language</option><option>Machine learning</option><option>Search and reinforcement learning</option><option>Systems and software</option><option>Bioinformatics</option><option>Course archives</option></select></label>
+    <label for="category">Category<select id="category" name="category" autocomplete="off"><option value="">All categories</option><!-- project-categories:start --><option>Research</option><option>Vision and imaging</option><option>Language</option><option>Machine learning</option><option>Search and reinforcement learning</option><option>Systems and software</option><option>Bioinformatics</option><option>Course archives</option><!-- project-categories:end --></select></label>
     <button class="filter-reset" type="reset">Clear filters</button>
   </form>
-  <p id="count" role="status">59 repositories</p><p id="empty" hidden>No projects match. Change the search or category.</p>
-  <section aria-label="Repositories"><article class="archive-row" data-category="Research" data-repo="fluorescence-ridge-repeatability">
+  <p id="count" role="status"><!-- project-count:start -->61 repositories<!-- project-count:end --></p><p id="empty" hidden>No projects match. Change the search or category.</p>
+  <section aria-label="Repositories"><!-- project-rows:start -->
+    <article class="archive-row" data-category="Research" data-repo="fluorescence-ridge-repeatability">
       <div><h2><a href="https://github.com/mehbakh82/fluorescence-ridge-repeatability">Fluorescence ridge repeatability</a></h2><p class="meta">Research</p></div>
-      <p>Disjoint repeat exposures tested whether faint F-actin ridges could provide a stable reference for denoising.</p>
-    </article><article class="archive-row" data-category="Research" data-repo="paired-wrist-fracture-evidence">
+      <p>F-actin ridge repeatability across fluorescence exposures: a stopped point-reference pilot, exploratory segment support, and an external test with insufficient counts.</p>
+    </article>
+    <article class="archive-row" data-category="Research" data-repo="nodule-volume-agreement">
+      <div><h2><a href="https://github.com/mehbakh82/nodule-volume-agreement">Lung nodule volume agreement</a></h2><p class="meta">Research</p></div>
+      <p>A 160-patient LIDC-IDRI feasibility study of CT boundary features and inter-reader lung nodule volume agreement.</p>
+    </article>
+    <article class="archive-row" data-category="Research" data-repo="paired-wrist-fracture-evidence">
       <div><h2><a href="https://github.com/mehbakh82/paired-wrist-fracture-evidence">Paired-view wrist radiographs</a></h2><p class="meta">Research</p></div>
-      <p>A patient-disjoint feasibility study and projection-level miss audit for pediatric wrist fracture detection.</p>
-    </article><article class="archive-row" data-category="Research" data-repo="recoverable-us-segmentation">
-      <div><h2><a href="https://github.com/mehbakh82/recoverable-us-segmentation">Recoverable errors in breast ultrasound</a></h2><p class="meta">Research</p></div>
-      <p>A fixed-budget segmentation pilot asked which first-pass masks a second pass could improve.</p>
-    </article><article class="archive-row" data-category="Research" data-repo="Thesis_Project">
+      <p>Feasibility of paired-view fracture detection on pediatric wrist X-rays: patient-disjoint baselines, a prespecified stop decision, and a projection-level miss audit.</p>
+    </article>
+    <article class="archive-row" data-category="Research" data-repo="Thesis_Project">
       <div><h2><a href="https://github.com/mehbakh82/Thesis_Project">Persian full-duplex speech</a></h2><p class="meta">Research</p></div>
-      <p>A streaming voice assistant that keeps listening during playback, with a measured cascade and an experimental direct speech route.</p>
-    </article><article class="archive-row" data-category="Vision and imaging" data-repo="Image-Processing">
+      <p>Persian full-duplex speech-to-speech BSc thesis project</p>
+    </article>
+    <article class="archive-row" data-category="Research" data-repo="recoverable-us-segmentation">
+      <div><h2><a href="https://github.com/mehbakh82/recoverable-us-segmentation">Recoverable errors in breast ultrasound</a></h2><p class="meta">Research</p></div>
+      <p>Independent BUS-BRA ultrasound segmentation pilot: fixed-budget mask refinement, oracle headroom, and a post-hoc pixel-change audit.</p>
+    </article>
+    <article class="archive-row" data-category="Research" data-repo="thyroid-nodule-segmentation">
+      <div><h2><a href="https://github.com/mehbakh82/thyroid-nodule-segmentation">Thyroid nodule segmentation on ultrasound</a></h2><p class="meta">Research</p></div>
+      <p>Thyroid nodule segmentation on ultrasound: TN3K baseline, channel ablations, transfer preflight, and reproducibility materials.</p>
+    </article>
+    <article class="archive-row" data-category="Vision and imaging" data-repo="Image-Processing">
       <div><h2><a href="https://github.com/mehbakh82/Image-Processing">Image Processing</a></h2><p class="meta">Vision and imaging</p></div>
       <p>Implements image compression and denoising with singular value decomposition and two-dimensional Fourier transforms.</p>
-    </article><article class="archive-row" data-category="Vision and imaging" data-repo="U-Net-Semantic-Segmentation">
+    </article>
+    <article class="archive-row" data-category="Vision and imaging" data-repo="U-Net-Semantic-Segmentation">
       <div><h2><a href="https://github.com/mehbakh82/U-Net-Semantic-Segmentation">U-Net semantic segmentation</a></h2><p class="meta">Vision and imaging</p></div>
-      <p>PyTorch U-Net and Attention U-Net implementations with a 23-class mIoU comparison.</p>
-    </article><article class="archive-row" data-category="Vision and imaging" data-repo="YOLO-RockPaperScissors">
+      <p>Implements U-Net and Attention U-Net from scratch for semantic segmentation. Includes data loading, training, mIoU evaluation, visualizations, and comparisons. Evaluates on test dataset with loss curves and predictions.</p>
+    </article>
+    <article class="archive-row" data-category="Vision and imaging" data-repo="YOLO-RockPaperScissors">
       <div><h2><a href="https://github.com/mehbakh82/YOLO-RockPaperScissors">YOLO Rock–Paper–Scissors</a></h2><p class="meta">Vision and imaging</p></div>
-      <p>YOLOv8n object detection with three classes and a held-out test split.</p>
-    </article><article class="archive-row" data-category="Language" data-repo="Gemma-Snappfood-Sentiment">
-      <div><h2><a href="https://github.com/mehbakh82/Gemma-Snappfood-Sentiment">Persian sentiment with Gemma</a></h2><p class="meta">Language</p></div>
-      <p>Gemma 3 fine-tuning on Persian SnappFood reviews, with a separate DPO experiment.</p>
-    </article><article class="archive-row" data-category="Language" data-repo="NLP-Text-Classification">
+      <p>Trains YOLOv8 on Rock Paper Scissors dataset for object detection. Includes data preprocessing, model training, loss/metric visualizations, and prediction on test images. Evaluates with mAP and confusion matrix.</p>
+    </article>
+    <article class="archive-row" data-category="Language" data-repo="NLP-Text-Classification">
       <div><h2><a href="https://github.com/mehbakh82/NLP-Text-Classification">Bilingual movie-genre classification</a></h2><p class="meta">Language</p></div>
       <p>Builds Persian and English text preprocessing pipelines and sets up ParsBERT and BERT for movie genre classification.</p>
-    </article><article class="archive-row" data-category="Language" data-repo="SVM-Sentiment-Classification">
+    </article>
+    <article class="archive-row" data-category="Language" data-repo="Gemma-Snappfood-Sentiment">
+      <div><h2><a href="https://github.com/mehbakh82/Gemma-Snappfood-Sentiment">Persian sentiment with Gemma</a></h2><p class="meta">Language</p></div>
+      <p>Fine-tunes Gemma on Snappfood dataset for sentiment analysis using SFT and GRPO/DPO. Includes data preprocessing, LoRA adapters, training with Adam, evaluation (accuracy, F1-macro), loss/metric plots, and sample predictions.</p>
+    </article>
+    <article class="archive-row" data-category="Language" data-repo="SVM-Sentiment-Classification">
       <div><h2><a href="https://github.com/mehbakh82/SVM-Sentiment-Classification">SVM Sentiment Classification</a></h2><p class="meta">Language</p></div>
-      <p>From-scratch and scikit-learn SVM sentiment classification with kernel comparisons.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="Bayes-Logistic-Classification">
+      <p>Implements SVM from scratch &amp; with scikit-learn for tweet sentiment classification. Includes data exploration, preprocessing, CountVectorizer features, accuracy &amp; confusion matrix evaluation. Explores non-linear SVM with linear, poly, RBF kernels on synthetic data, visualizing decision boundaries.</p>
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="Bayes-Logistic-Classification">
       <div><h2><a href="https://github.com/mehbakh82/Bayes-Logistic-Classification">Bayes Logistic Classification</a></h2><p class="meta">Machine learning</p></div>
-      <p>From-scratch Gaussian Bayes and logistic regression with regularization and ROC evaluation.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="Data-Representation">
+      <p>Implements Bayesian Classifier &amp; Logistic Regression from scratch for binary classification on Pima Diabetes &amp; Breast Cancer datasets. Includes preprocessing, metrics (Accuracy, Precision, Recall, F1), confusion matrix, ROC curves, gradient descent, L2 regularization, and Gaussian likelihood.</p>
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="Data-Representation">
       <div><h2><a href="https://github.com/mehbakh82/Data-Representation">Data Representation</a></h2><p class="meta">Machine learning</p></div>
       <p>Compares word-frequency and singular value decomposition representations for retrieving similar sentences.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="Ensemble-Learning-Scratch">
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="Ensemble-Learning-Scratch">
       <div><h2><a href="https://github.com/mehbakh82/Ensemble-Learning-Scratch">Ensemble Learning Scratch</a></h2><p class="meta">Machine learning</p></div>
-      <p>From-scratch bagging, AdaBoost, and gradient boosting, with XGBoost for comparison.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="GMM-DBSCAN-Scratch">
+      <p>Implements Bagging, AdaBoost, and Gradient Boosting from scratch for binary classification on Breast Cancer and make_moons datasets. Includes decision trees, evaluation metrics, confusion matrices, and decision boundary visualizations. Compares with XGBoost.</p>
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="GMM-DBSCAN-Scratch">
       <div><h2><a href="https://github.com/mehbakh82/GMM-DBSCAN-Scratch">GMM and DBSCAN from scratch</a></h2><p class="meta">Machine learning</p></div>
-      <p>Gaussian mixture models with expectation–maximization and density-based DBSCAN clustering.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="Heart-Disease-Prediction-Using-Hidden-Markov-Models">
+      <p>Implements GMM (EM) and DBSCAN from scratch for clustering. Includes 1D and moon-shaped data, visualizations, and comparisons with scikit-learn&#x27;s GMM and DBSCAN. Evaluates log-likelihood and cluster assignments.</p>
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="Heart-Disease-Prediction-Using-Hidden-Markov-Models">
       <div><h2><a href="https://github.com/mehbakh82/Heart-Disease-Prediction-Using-Hidden-Markov-Models">Heart disease risk modeling with HMMs</a></h2><p class="meta">Machine learning</p></div>
       <p>Explores heart disease risk modeling by pairing hidden Markov model inference on DNA sequences with a hand-specified Bayesian network that generates risk labels.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="KNN-PCA-Scratch">
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="KNN-PCA-Scratch">
       <div><h2><a href="https://github.com/mehbakh82/KNN-PCA-Scratch">KNN and PCA from scratch</a></h2><p class="meta">Machine learning</p></div>
-      <p>Implements k-nearest neighbors and principal component analysis and compares projections.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="LDA-Classification-Scratch">
+      <p>Implements KNN and PCA from scratch for classification and dimensionality reduction. Includes Iris and MNIST datasets for KNN, PCA on credit card data, t-SNE comparison, and visualizations. Evaluates accuracy and variance preservation.</p>
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="LDA-Classification-Scratch">
       <div><h2><a href="https://github.com/mehbakh82/LDA-Classification-Scratch">LDA classification from scratch</a></h2><p class="meta">Machine learning</p></div>
-      <p>Linear discriminant analysis with feature selection and decision-boundary comparisons.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="Multilayer-Perceptron">
+      <p>Implements LDA from scratch for binary/multiclass classification. Includes data exploration, preprocessing, feature selection (MI, RFE), and evaluation on game and star datasets. Visualizes decision boundaries and compares with scikit-learn&#x27;s LDA.</p>
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="Multilayer-Perceptron">
       <div><h2><a href="https://github.com/mehbakh82/Multilayer-Perceptron">Multilayer Perceptron</a></h2><p class="meta">Machine learning</p></div>
       <p>Explores multilayer perceptrons through handwritten digit classification on MNIST.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="Neural-Networks-Scratch">
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="Neural-Networks-Scratch">
       <div><h2><a href="https://github.com/mehbakh82/Neural-Networks-Scratch">Neural Networks Scratch</a></h2><p class="meta">Machine learning</p></div>
-      <p>From-scratch networks and PyTorch/Keras comparisons on XOR, spiral, and MNIST data.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="Perceptron-vs-Logistic-Regression">
+      <p>Implements neural networks from scratch and with PyTorch/Keras for XOR, spiral, and MNIST classification. Includes gradient descent, activation functions, dropout, and visualizations. Compares optimizers and evaluates accuracy.</p>
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="Perceptron-vs-Logistic-Regression">
       <div><h2><a href="https://github.com/mehbakh82/Perceptron-vs-Logistic-Regression">Perceptron vs Logistic Regression</a></h2><p class="meta">Machine learning</p></div>
-      <p>Compares linear decision boundaries and convergence on synthetic datasets.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="Polynomial-Regression">
+      <p>Implements Perceptron &amp; Logistic Regression from scratch for binary classification on synthetic data. Includes data generation, gradient descent training, decision boundary visualization, accuracy evaluation, and theoretical comparison of decision boundaries, convergence, and non-linear separability.</p>
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="Polynomial-Regression">
       <div><h2><a href="https://github.com/mehbakh82/Polynomial-Regression">Polynomial Regression</a></h2><p class="meta">Machine learning</p></div>
       <p>Fits polynomial regression models and examines how polynomial degree affects the fitted curve.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="Predicting-Traveler-Satisfaction-Levels-Using-Classification">
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="Predicting-Traveler-Satisfaction-Levels-Using-Classification">
       <div><h2><a href="https://github.com/mehbakh82/Predicting-Traveler-Satisfaction-Levels-Using-Classification">Predicting Traveler Satisfaction Levels Using Classification</a></h2><p class="meta">Machine learning</p></div>
       <p>Compares Gaussian naive Bayes and decision trees for predicting airline passenger satisfaction from travel and service features.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="Regression">
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="Regression">
       <div><h2><a href="https://github.com/mehbakh82/Regression">Regression</a></h2><p class="meta">Machine learning</p></div>
-      <p>From-scratch linear and polynomial regression, cross-validation, and Ridge and Lasso regularization.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="Solving-Complex-System-of-ODEs-Using-Numerical-Methods">
+      <p>Implementation of linear &amp; polynomial regression from scratch, with gradient descent, normal equation, train-test split, k-fold CV, and Ridge/Lasso regularization. Includes synthetic data, RMSE evaluation, and visualizations for overfitting analysis.</p>
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="Solving-Complex-System-of-ODEs-Using-Numerical-Methods">
       <div><h2><a href="https://github.com/mehbakh82/Solving-Complex-System-of-ODEs-Using-Numerical-Methods">Solving Complex System of ODEs Using Numerical Methods</a></h2><p class="meta">Machine learning</p></div>
       <p>Solves for initial conditions with Newton–Raphson and compares Euler, improved Euler, and fourth-order Runge–Kutta methods on a coupled nonlinear ODE system.</p>
-    </article><article class="archive-row" data-category="Machine learning" data-repo="Spectral-Clustering">
+    </article>
+    <article class="archive-row" data-category="Machine learning" data-repo="Spectral-Clustering">
       <div><h2><a href="https://github.com/mehbakh82/Spectral-Clustering">Spectral Clustering</a></h2><p class="meta">Machine learning</p></div>
       <p>Implements spectral clustering from scratch and applies it to graphs and k-nearest-neighbor graphs built from circular data.</p>
-    </article><article class="archive-row" data-category="Search and reinforcement learning" data-repo="Break-through-Game">
-      <div><h2><a href="https://github.com/mehbakh82/Break-through-Game">Break through Game</a></h2><p class="meta">Search and reinforcement learning</p></div>
-      <p>Implements minimax and alpha–beta pruning for Breakthrough and compares runtime and win rates across search depths against a greedy baseline.</p>
-    </article><article class="archive-row" data-category="Search and reinforcement learning" data-repo="CSP-Graph-Coloring">
-      <div><h2><a href="https://github.com/mehbakh82/CSP-Graph-Coloring">CSP Graph Coloring</a></h2><p class="meta">Search and reinforcement learning</p></div>
-      <p>Models graph coloring as a constraint satisfaction problem and searches for assignments that give adjacent nodes different colors.</p>
-    </article><article class="archive-row" data-category="Search and reinforcement learning" data-repo="Deep-Reinforcement-Learning-Using-A2C-Algorithm">
+    </article>
+    <article class="archive-row" data-category="Search and reinforcement learning" data-repo="Deep-Reinforcement-Learning-Using-A2C-Algorithm">
       <div><h2><a href="https://github.com/mehbakh82/Deep-Reinforcement-Learning-Using-A2C-Algorithm">A2C-style CartPole</a></h2><p class="meta">Search and reinforcement learning</p></div>
       <p>Implements an A2C-style actor–critic in PyTorch for CartPole-v1, with shared features and separate policy and value heads.</p>
-    </article><article class="archive-row" data-category="Search and reinforcement learning" data-repo="Hunting-Game-Using-Bayes-Nets">
+    </article>
+    <article class="archive-row" data-category="Search and reinforcement learning" data-repo="Break-through-Game">
+      <div><h2><a href="https://github.com/mehbakh82/Break-through-Game">Break through Game</a></h2><p class="meta">Search and reinforcement learning</p></div>
+      <p>Implements minimax and alpha–beta pruning for Breakthrough and compares runtime and win rates across search depths against a greedy baseline.</p>
+    </article>
+    <article class="archive-row" data-category="Search and reinforcement learning" data-repo="CSP-Graph-Coloring">
+      <div><h2><a href="https://github.com/mehbakh82/CSP-Graph-Coloring">CSP Graph Coloring</a></h2><p class="meta">Search and reinforcement learning</p></div>
+      <p>Models graph coloring as a constraint satisfaction problem and searches for assignments that give adjacent nodes different colors.</p>
+    </article>
+    <article class="archive-row" data-category="Search and reinforcement learning" data-repo="Hunting-Game-Using-Bayes-Nets">
       <div><h2><a href="https://github.com/mehbakh82/Hunting-Game-Using-Bayes-Nets">Hunting Game Using Bayes Nets</a></h2><p class="meta">Search and reinforcement learning</p></div>
       <p>Uses Bayesian-network inference to estimate a hidden deer’s location in a grid-based game.</p>
-    </article><article class="archive-row" data-category="Search and reinforcement learning" data-repo="Mountain-Car-Game-Using-RL">
+    </article>
+    <article class="archive-row" data-category="Search and reinforcement learning" data-repo="Mountain-Car-Game-Using-RL">
       <div><h2><a href="https://github.com/mehbakh82/Mountain-Car-Game-Using-RL">Mountain Car Game Using RL</a></h2><p class="meta">Search and reinforcement learning</p></div>
       <p>Compares Q-learning and SARSA on MountainCar using a discretized representation of position and velocity.</p>
-    </article><article class="archive-row" data-category="Search and reinforcement learning" data-repo="TSP-Problem-Using-Local-Search">
+    </article>
+    <article class="archive-row" data-category="Search and reinforcement learning" data-repo="TSP-Problem-Using-Local-Search">
       <div><h2><a href="https://github.com/mehbakh82/TSP-Problem-Using-Local-Search">TSP Problem Using Local Search</a></h2><p class="meta">Search and reinforcement learning</p></div>
       <p>Compares simulated annealing and Lin–Kernighan-style local search for the Euclidean traveling salesperson problem under several tour initializations.</p>
-    </article><article class="archive-row" data-category="Systems and software" data-repo="AndroidSimpleNoteApp">
+    </article>
+    <article class="archive-row" data-category="Systems and software" data-repo="AndroidSimpleNoteApp">
       <div><h2><a href="https://github.com/mehbakh82/AndroidSimpleNoteApp">Android Simple Note App</a></h2><p class="meta">Systems and software</p></div>
-      <p>Offline-first Kotlin notes app with Jetpack Compose, Room, local search, pagination, and synchronization.</p>
-    </article><article class="archive-row" data-category="Systems and software" data-repo="C-Minus-Compiler">
+      <p>A modern offline-first Android note-taking app built with Jetpack Compose, Room database, and clean architecture. Features JWT authentication, real-time search, pagination, and seamless sync.</p>
+    </article>
+    <article class="archive-row" data-category="Systems and software" data-repo="C-Minus-Compiler">
       <div><h2><a href="https://github.com/mehbakh82/C-Minus-Compiler">C-minus compiler</a></h2><p class="meta">Systems and software</p></div>
-      <p>Python lexical analyzer and predictive recursive-descent parser for a C-minus language subset.</p>
-    </article><article class="archive-row" data-category="Systems and software" data-repo="Claude-RTL-Fix">
+      <p>C-minus language compiler implemented in Python — lexical analyzer (Phase 1) and predictive recursive descent parser (Phase 2) with 10 test cases each</p>
+    </article>
+    <article class="archive-row" data-category="Systems and software" data-repo="Claude-RTL-Fix">
       <div><h2><a href="https://github.com/mehbakh82/Claude-RTL-Fix">Claude RTL Fix</a></h2><p class="meta">Systems and software</p></div>
-      <p>Browser extension for Persian and mixed-direction text in Claude.</p>
-    </article><article class="archive-row" data-category="Systems and software" data-repo="Energy-Aware-Task-Scheduler">
+      <p>Browser extension that fixes RTL text rendering for Persian responses in Claude.ai</p>
+    </article>
+    <article class="archive-row" data-category="Systems and software" data-repo="Energy-Aware-Task-Scheduler">
       <div><h2><a href="https://github.com/mehbakh82/Energy-Aware-Task-Scheduler">Energy-aware task scheduling</a></h2><p class="meta">Systems and software</p></div>
-      <p>Benchmarks genetic, GCN-based, and heuristic schedulers with DVFS and slack reclamation.</p>
-    </article><article class="archive-row" data-category="Systems and software" data-repo="GithubUserFetcher">
+      <p>Energy-aware DAG task scheduling for multi-core processors using GA, DVFS, and Graph Neural Networks.</p>
+    </article>
+    <article class="archive-row" data-category="Systems and software" data-repo="GithubUserFetcher">
       <div><h2><a href="https://github.com/mehbakh82/GithubUserFetcher">GitHub user fetcher</a></h2><p class="meta">Systems and software</p></div>
-      <p>Menu-driven Kotlin client that fetches and caches GitHub profile data.</p>
-    </article><article class="archive-row" data-category="Systems and software" data-repo="IELTS-Availability-Checker">
+      <p>A Kotlin terminal app that fetches and caches GitHub user data (username, followers, repos, etc.) using Retrofit and Gson, with a menu-driven interface.</p>
+    </article>
+    <article class="archive-row" data-category="Systems and software" data-repo="IELTS-Availability-Checker">
       <div><h2><a href="https://github.com/mehbakh82/IELTS-Availability-Checker">IELTS Availability Checker</a></h2><p class="meta">Systems and software</p></div>
-      <p>Availability monitor with desktop, console, and email notification options.</p>
-    </article><article class="archive-row" data-category="Systems and software" data-repo="IOSSimpleNoteApp">
+      <p>Automated monitor for IELTS exam slot availability on irsafam.org — polls at configurable intervals and sends desktop, console, and email notifications when slots open up</p>
+    </article>
+    <article class="archive-row" data-category="Systems and software" data-repo="IOSSimpleNoteApp">
       <div><h2><a href="https://github.com/mehbakh82/IOSSimpleNoteApp">iOS Simple Note App</a></h2><p class="meta">Systems and software</p></div>
-      <p>Offline-first Swift notes app with SwiftUI, Core Data, local search, pagination, and synchronization.</p>
-    </article><article class="archive-row" data-category="Systems and software" data-repo="Lightweight-Container-Manager">
+      <p>A modern offline-first iOS note-taking app built with SwiftUI, Core Data, and clean architecture. Features JWT authentication, real-time search, pagination, and seamless sync.</p>
+    </article>
+    <article class="archive-row" data-category="Systems and software" data-repo="Lightweight-Container-Manager">
       <div><h2><a href="https://github.com/mehbakh82/Lightweight-Container-Manager">Lightweight Container Manager</a></h2><p class="meta">Systems and software</p></div>
-      <p>C systems project exploring Linux process isolation, resource controls, and container lifecycle.</p>
-    </article><article class="archive-row" data-category="Systems and software" data-repo="mastermind-swift">
+      <p>A lightweight deamonless container management system inspired by tools like Docker and Podman, using Linux namespaces, cgroups, chroot, and UnionFS. Features resource control, process isolation, and container lifecycle management.</p>
+    </article>
+    <article class="archive-row" data-category="Systems and software" data-repo="mastermind-swift">
       <div><h2><a href="https://github.com/mehbakh82/mastermind-swift">mastermind swift</a></h2><p class="meta">Systems and software</p></div>
-      <p>Swift command-line client for playing Mastermind using a REST API.</p>
-    </article><article class="archive-row" data-category="Systems and software" data-repo="Self-Driving-Cars-Scheduling-System">
+      <p>A command-line client for the Mastermind game, written in Swift. Interacts with a REST API to manage game logic.</p>
+    </article>
+    <article class="archive-row" data-category="Systems and software" data-repo="Self-Driving-Cars-Scheduling-System">
       <div><h2><a href="https://github.com/mehbakh82/Self-Driving-Cars-Scheduling-System">Self Driving Cars Scheduling System</a></h2><p class="meta">Systems and software</p></div>
-      <p>Simulation of queueing and dispatch policies with wait-time and efficiency comparisons.</p>
-    </article><article class="archive-row" data-category="Bioinformatics" data-repo="LUAD-ceRNA-Biomarker-Analysis">
+      <p>Simulates task arrival, queuing, and processing for cars with FIFO, Weighted Round Robin, and Non-Preemptive Priority scheduling. Includes performance analysis through queue lengths, wait times, and efficiency metrics.</p>
+    </article>
+    <article class="archive-row" data-category="Bioinformatics" data-repo="LUAD-ceRNA-Biomarker-Analysis">
       <div><h2><a href="https://github.com/mehbakh82/LUAD-ceRNA-Biomarker-Analysis">LUAD ceRNA biomarker analysis</a></h2><p class="meta">Bioinformatics</p></div>
-      <p>Exploratory bioinformatics classification and expression analysis coursework using public cancer data.</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE124-FOEEC">
+      <p>Bioinformatics pipeline for lung adenocarcinoma (LUAD) biomarker discovery: differential expression, ceRNA network construction, WGCNA, machine learning feature selection, and TCGA validation</p>
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE124-FOEEC">
       <div><h2><a href="https://github.com/mehbakh82/CE124-FOEEC">CE124 FOEEC</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Dr. Koohi’s CE124: Fundamentals of Electrical and Electronic Circuits (Sharif University of Technology - Fall 2022) Assignments</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE215-NC">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE215-NC">
       <div><h2><a href="https://github.com/mehbakh82/CE215-NC">CE215 NC</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Dr. Hossein Ghorban’s CE215: Numerical Computations (Sharif University of Technology - Fall 2024) Assignments</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE223-DSD">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE223-DSD">
       <div><h2><a href="https://github.com/mehbakh82/CE223-DSD">CE223 DSD</a></h2><p class="meta">Course archives</p></div>
-      <p>Sharif digital systems design coursework.</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE408-OS-Lab">
+      <p>Solutions to Dr. Bayat Sarmadi’s CE417: Digital Systems Design (Sharif University of Technology - Fall 2025) Assignments</p>
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE408-OS-Lab">
       <div><h2><a href="https://github.com/mehbakh82/CE408-OS-Lab">CE408 OS Lab</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Dr. Beigi’s CE408: Operating Systems Lab (Sharif University of Technology - Summer 2025) Assignments</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE414-CD">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE414-CD">
       <div><h2><a href="https://github.com/mehbakh82/CE414-CD">CE414 CD</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Dr. Hosseinmardi’s CE414: Compiler Design (Sharif University of Technology - Fall 2025) Assignments</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE416-CN-Lab">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE416-CN-Lab">
       <div><h2><a href="https://github.com/mehbakh82/CE416-CN-Lab">CE416 CN Lab</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Dr. Safaie’s CE416: Computer Networks Lab (Sharif University of Technology - Summer 2025) Assignments</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE417-AI">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE417-AI">
       <div><h2><a href="https://github.com/mehbakh82/CE417-AI">CE417 AI</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Dr. Rohban&#x27;s CE417: Artificial Intelligence (Sharif University of Technology - Spring 2024) Assignments</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE432-MCC">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE432-MCC">
       <div><h2><a href="https://github.com/mehbakh82/CE432-MCC">CE432 MCC</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Dr. Ebrahimi’s CE432: Multicore Computation (Sharif University of Technology - Spring 2025) Assignments</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE443-CN">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE443-CN">
       <div><h2><a href="https://github.com/mehbakh82/CE443-CN">CE443 CN</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Dr. Mizanian’s CE443: Computer Networks (Sharif University of Technology - Fall 2024) Assignments</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE453-RTS">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE453-RTS">
       <div><h2><a href="https://github.com/mehbakh82/CE453-RTS">CE453 RTS</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Dr. Safari&#x27;s CE453: Real-Time Systems (Sharif University of Technology - Fall 2024) Assignments</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE462-ES">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE462-ES">
       <div><h2><a href="https://github.com/mehbakh82/CE462-ES">CE462 ES</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Dr. Ansari’s CE462: Embedded Systems (Sharif University of Technology - Spring 2025) Assignments</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE474-SE">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE474-SE">
       <div><h2><a href="https://github.com/mehbakh82/CE474-SE">CE474 SE</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Dr. Rivadeh’s CE474: Software Engineering (Sharif University of Technology - Spring 2025) Assignments</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE494-IB">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE494-IB">
       <div><h2><a href="https://github.com/mehbakh82/CE494-IB">CE494 IB</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Drs. Sharifi Zarchi and Koohi’s CE494: Introduction to Bioinformatics (Sharif University of Technology - Fall 2025) Assignments</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE634-CS">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE634-CS">
       <div><h2><a href="https://github.com/mehbakh82/CE634-CS">CE634 CS</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Dr. Safaie’s CE634: Computer Simulation (Sharif University of Technology - Spring 2024) Assignments</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="CE717-ML">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="CE717-ML">
       <div><h2><a href="https://github.com/mehbakh82/CE717-ML">CE717 ML</a></h2><p class="meta">Course archives</p></div>
       <p>Solutions to Drs. Rabiee and Dehghanian’s CE717: Machine Learning Assignments (Sharif University of Technology – Spring 2025)</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="Software-Engineering-Lab-1">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="Software-Engineering-Lab-1">
       <div><h2><a href="https://github.com/mehbakh82/Software-Engineering-Lab-1">Software Engineering Lab 1</a></h2><p class="meta">Course archives</p></div>
       <p>React static frontend with a GitHub Actions deployment exercise.</p>
-    </article><article class="archive-row" data-category="Course archives" data-repo="Software-Engineering-Lab-2">
+    </article>
+    <article class="archive-row" data-category="Course archives" data-repo="Software-Engineering-Lab-2">
       <div><h2><a href="https://github.com/mehbakh82/Software-Engineering-Lab-2">Software Engineering Lab 2</a></h2><p class="meta">Course archives</p></div>
       <p>Java messaging-service exercise comparing implementations before and after a SOLID refactor.</p>
-    </article></section>
+    </article>
+  <!-- project-rows:end --></section>
 </div></main>
   <footer class="footer"><div class="wrap">
     <h2>Get in touch.</h2>
