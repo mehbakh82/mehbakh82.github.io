@@ -93,6 +93,8 @@ header nav a:hover,header nav a[aria-current=page]{color:var(--accent);text-deco
 .work-row p{color:var(--sub)}
 .research-updates{margin-top:clamp(2.5rem,5vw,4.5rem)}
 .research-updates .work-list{margin-top:1rem}
+.research-updates .work-row{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr) 7.5rem}
+.research-updates .work-row>a{justify-self:end;text-align:right}
 .research-updates h4{margin:0;font-size:1rem;font-weight:650;line-height:1.45}
 .about{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.62fr);gap:clamp(2rem,5vw,5rem)}
 .about-profile{display:grid;grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);align-items:start;gap:clamp(1.15rem,2.7vw,2.45rem)}
@@ -175,6 +177,8 @@ header nav a:hover,header nav a[aria-current=page]{color:var(--accent);text-deco
  .card img{aspect-ratio:2}
  .work-row{grid-template-columns:1fr auto;gap:.35rem .85rem}
  .work-row p{grid-row:2;grid-column:1 / -1}
+ .research-updates .work-row{grid-template-columns:minmax(0,1fr);gap:.55rem}
+ .research-updates .work-row>a{justify-self:start;text-align:left}
  .about h2{max-width:none}
  .band .actions{align-items:start}
  .archive-row{grid-template-columns:1fr;gap:.25rem}
